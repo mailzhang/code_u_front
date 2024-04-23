@@ -27,3 +27,11 @@ npm run dev
 ```sh
 npm run build
 ```
+
+
+### run docker
+
+```sh
+sh build.sh
+
+```
