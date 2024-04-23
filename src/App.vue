@@ -1,7 +1,5 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import JsonFormatter from './components/JsonFormatter.vue'
-import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
