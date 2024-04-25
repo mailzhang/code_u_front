@@ -19,6 +19,8 @@ RUN npm run build
 # Step 2: Setup the server using Nginx
 FROM nginx:stable-alpine as production-stage
 
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
 # Copy built assets from build-stage to the default nginx public folder
 COPY --from=build-stage /app/dist /usr/share/nginx/html
 
